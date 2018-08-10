@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework</groupId>
     <artifactId>devops-spring-boot</artifactId>
-    <version>${projectVersion}</version>
+    <version>yes</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -38,7 +38,7 @@
         <url>https://github.com/rauccapuclla/devops-docker.git</url>
         <connection>scm:git:https://github.com/rauccapuclla/devops-docker.git</connection>
         <developerConnection>scm:git:https://github.com/rauccapuclla/devops-docker.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>test</tag>
     </scm>
     <profiles>
       <profile>
