@@ -72,3 +72,4 @@ crashlytics-build.properties
 .classpath
 .project
 #src/
+.release.properties
