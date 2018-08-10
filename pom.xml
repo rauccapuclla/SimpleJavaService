@@ -94,4 +94,10 @@
             </build>
         </profile>
     </profiles>
+    <distributionManagement>
+        <repository>
+            <id>local</id>
+            <url>file:///home/rauccapu/maven/repo</url>
+        </repository>
+    </distributionManagement>
 </project>
