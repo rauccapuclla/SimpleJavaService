@@ -5,6 +5,7 @@ services:
     volumes:
       - .:/usr/src/app
       - mavenrepo:/root/.m2
+    working_dir: /usr/src/app
 volumes:
   mavenrepo:
     external: true 

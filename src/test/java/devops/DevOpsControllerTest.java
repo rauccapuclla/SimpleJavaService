@@ -1,4 +1,4 @@
-package devops;
+package app;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -26,6 +26,6 @@ public class DevOpsControllerTest {
     public void getMessage() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Aplicación de laboratorio v3")));
+                .andExpect(content().string(equalTo("Simple Java Service version 1")));
     }
 }

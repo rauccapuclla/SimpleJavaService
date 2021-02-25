@@ -1,8 +1,8 @@
 FROM java:8-alpine
 
-RUN mkdir -p /opt/devops
-COPY ./target/*.jar /opt/devops/app.jar
+RUN mkdir -p /opt/app
+COPY ./target/*.jar /opt/app/app.jar
 
-WORKDIR /opt/devops
+WORKDIR /opt/app
 
 CMD ["java","-jar","app.jar"]

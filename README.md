@@ -1,4 +1,4 @@
-# devops-docker
+# Simple Java Web Service
 Continuous integration and deployment example with docker
 
 ## Pre-Reqs
@@ -6,31 +6,19 @@ Continuous integration and deployment example with docker
 - docker 17 +
 - docker-compose 1.16 +
 
-## Generate maven image
-
-In the root directory execute the following command:
-```
-docker build -t maven:alpine maven/.
-```
-This command will generate the maven image that will be use to build the source code.
-
-You can check if the image has been created executing the following command
-```
-docker images
-```
 ## Build the project
 
 ### Execute unit test
 In the project root's directory execute the following commands:
 ```
-docker-compose -f docker-ci.yml run --rm maven clean test
+docker-compose -f docker-ci.yml run --rm maven mvn clean test
 ```
 ## Build the project
 
 ### Generate jar
 In the project root's directory execute the following commands:
 ```
-docker-compose -f docker-ci.yml run --rm maven clean package
+docker-compose -f docker-ci.yml run --rm maven mvn clean package
 ```
 
 ## Package the application in docker container
@@ -52,5 +40,5 @@ docker-compose up -d
 ```
 curl http://localhost:8080
 ```
-The response should be "Applicacion de laboratorio V1"
+The response should be "Applicacion de laboratorio V[version number]"
 

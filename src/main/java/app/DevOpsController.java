@@ -1,4 +1,4 @@
-package devops;
+package app;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,13 +9,9 @@ public class DevOpsController {
   private static final Logger LOGGER = LoggerFactory.getLogger(DevOpsController.class);
     @RequestMapping("/")
     public String index() {
-      LOGGER.info("EVENTO:{\"saludo\":\"Hola\"}");
-      LOGGER.debug("DEBUG message");
-      LOGGER.warn("WARN message");
-      LOGGER.error("ERROR message");
+      LOGGER.info("Request has been made to /");
 
-      return "Aplicación de laboratorio v3";
-      
+      return "Simple Java Service version 1";
       
     }
 }

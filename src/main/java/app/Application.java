@@ -1,4 +1,4 @@
-package devops;
+package app;
 
 import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
