@@ -28,7 +28,7 @@ Execure the following command:
 docker-compose build
 ```
 
-This command will generate a docker image called rauccapuclla/devops-docker
+This command will generate a docker image called app
 
 ## Run the application using docker-compose
 

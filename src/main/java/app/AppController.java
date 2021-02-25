@@ -5,8 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping; @RestController
 
-public class DevOpsController {
-  private static final Logger LOGGER = LoggerFactory.getLogger(DevOpsController.class);
+public class AppController {
+  private static final Logger LOGGER = LoggerFactory.getLogger(AppController.class);
     @RequestMapping("/")
     public String index() {
       LOGGER.info("Request has been made to /");
